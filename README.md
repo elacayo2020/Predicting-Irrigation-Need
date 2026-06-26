@@ -3,6 +3,14 @@
 ## Overview
 This project predicts irrigation needs using environmental and soil-related features (target y). The workflow focuses on data cleaning, exploratory data analysis, visualization, and building an optimized machine learning model. The data set was from a Kaggle competition: https://www.kaggle.com/competitions/playground-series-s6e4/overview
 
+## Project Structure
+The repository is organized into a modular structure to ensure scalability and reproducibility:
+
+*   **`src/`**: Contains core Python modules for `preprocessing.py`, `train.py`, and `evaluate.py`.
+*   **`models/`**: Stores the finalized XGBoost model and the Best Hyperparameters found via Optuna.
+*   **`plots/`**: Contains visualizations from the Exploratory Data Analysis (EDA) and optimization history.
+*   **`notebooks/`**: Research and development files for initial EDA and Optuna tuning experiments.
+
 ## Data Cleaning
 Data preprocessing steps included ensuring correct data types & preparing features for modeling. All objects were turned into categories for the XGBoost model.
 
